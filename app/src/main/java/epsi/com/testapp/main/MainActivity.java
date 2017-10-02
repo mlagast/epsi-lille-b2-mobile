@@ -12,6 +12,7 @@ import epsi.com.testapp.R;
 import epsi.com.testapp.ex1.Ex1LinearActivity;
 import epsi.com.testapp.ex1.Ex1RelativeActivity;
 import epsi.com.testapp.ex2.TVShowActivity;
+import epsi.com.testapp.ex3.Ex3ListActivity;
 
 import static android.R.attr.start;
 
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         MainMenuItem[] items = new MainMenuItem[] {
                 new MainMenuItem("Ex 1 - LinearLayout", Ex1LinearActivity.class),
                 new MainMenuItem("Ex 1 - RelativeLayout", Ex1RelativeActivity.class),
-                new MainMenuItem("Ex 2 - TV Show detail", TVShowActivity.class)
+                new MainMenuItem("Ex 2 - TV Show detail", TVShowActivity.class),
+                new MainMenuItem("Ex 2 - List of TV Shows", Ex3ListActivity.class)
         };
 
         adapter = new MainMenuAdapter(this, items);

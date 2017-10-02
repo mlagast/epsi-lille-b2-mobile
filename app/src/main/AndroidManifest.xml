@@ -19,6 +19,7 @@
         <activity android:name=".ex1.Ex1LinearActivity" />
         <activity android:name=".ex1.Ex1RelativeActivity" />
         <activity android:name=".ex2.TVShowActivity" />
+        <activity android:name=".ex3.Ex3ListActivity" />
 
     </application>
 
