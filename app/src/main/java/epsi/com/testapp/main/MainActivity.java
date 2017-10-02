@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import epsi.com.testapp.R;
 import epsi.com.testapp.ex1.Ex1LinearActivity;
+import epsi.com.testapp.ex1.Ex1RelativeActivity;
 
 import static android.R.attr.start;
 
@@ -25,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         MainMenuItem[] items = new MainMenuItem[] {
                 new MainMenuItem("Ex 1 - LinearLayout", Ex1LinearActivity.class),
-                new MainMenuItem("Ex 1 - LinearLayout", MainActivity.class),
-                new MainMenuItem("Ex 1 - LinearLayout", MainActivity.class)
+                new MainMenuItem("Ex 1 - RelativeLayout", Ex1RelativeActivity.class)
         };
 
         adapter = new MainMenuAdapter(this, items);
