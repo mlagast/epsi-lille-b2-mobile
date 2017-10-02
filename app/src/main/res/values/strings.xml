@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestApp</string>
+    <string name="ex1_email">Email</string>
+    <string name="ex1_password">Password</string>
 </resources>
