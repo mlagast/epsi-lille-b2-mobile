@@ -20,10 +20,19 @@ android {
 }
 
 dependencies {
+    final okhttp3Version = '3.6.0'
+    final retrofit2Version = '2.3.0'
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    compile "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile "com.squareup.okhttp3:okhttp:$okhttp3Version"
+    compile "com.squareup.okhttp3:logging-interceptor:$okhttp3Version"
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'

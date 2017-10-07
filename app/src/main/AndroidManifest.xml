@@ -20,7 +20,10 @@
         <activity android:name=".ex1.Ex1RelativeActivity" />
         <activity android:name=".ex2.TVShowActivity" />
         <activity android:name=".ex3.Ex3ListActivity" />
+        <activity android:name=".ex4.ui.ShowListActivity" />
 
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
