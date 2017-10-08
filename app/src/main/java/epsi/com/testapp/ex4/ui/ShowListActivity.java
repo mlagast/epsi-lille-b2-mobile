@@ -1,6 +1,7 @@
 package epsi.com.testapp.ex4.ui;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import epsi.com.testapp.R;
+import epsi.com.testapp.ex4.api.HTTPShowRequest;
 import epsi.com.testapp.ex4.api.ShowService;
 import epsi.com.testapp.ex4.manager.ServiceManager;
 import epsi.com.testapp.ex4.model.Show;
@@ -42,6 +44,16 @@ public class ShowListActivity extends Activity {
     protected void onStart() {
         super.onStart();
         loadData();
+        loadDataWithoutRetrofit();
+    }
+
+    public void loadDataWithoutRetrofit() {
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                new HTTPShowRequest().fetchTrending();
+            }
+        });
     }
 
     public void loadData() {
@@ -64,4 +76,6 @@ public class ShowListActivity extends Activity {
         Call<List<TrendingShow>> call = service.trending(0, 10);
         call.enqueue(serviceCallback);
     }
+
+
 }

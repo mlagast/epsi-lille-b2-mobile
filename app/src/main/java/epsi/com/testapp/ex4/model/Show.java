@@ -21,6 +21,9 @@ public class Show {
     public String language;
     public List<String> genres;
 
+    public Show() {
+    }
+
     public Show(Integer year, String title) {
         this.year = year;
         this.title = title;
