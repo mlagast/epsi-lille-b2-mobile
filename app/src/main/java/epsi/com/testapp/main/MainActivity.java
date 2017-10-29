@@ -14,6 +14,7 @@ import epsi.com.testapp.ex1.Ex1RelativeActivity;
 import epsi.com.testapp.ex2.TVShowActivity;
 import epsi.com.testapp.ex3.Ex3ListActivity;
 import epsi.com.testapp.ex4.ui.ShowListActivity;
+import epsi.com.testapp.ex5.Ex5Activity;
 
 import static android.R.attr.start;
 
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 new MainMenuItem("Ex 1 - RelativeLayout", Ex1RelativeActivity.class),
                 new MainMenuItem("Ex 2 - TV Show detail", TVShowActivity.class),
                 new MainMenuItem("Ex 3 - List of TV Shows", Ex3ListActivity.class),
-                new MainMenuItem("Ex 4 - API of TV Shows", ShowListActivity.class)
+                new MainMenuItem("Ex 4 - API of TV Shows", ShowListActivity.class),
+                new MainMenuItem("Ex 5 - Room persistence", Ex5Activity.class)
         };
 
         adapter = new MainMenuAdapter(this, items);

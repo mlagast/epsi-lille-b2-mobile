@@ -2,4 +2,6 @@
     <string name="app_name">TestApp</string>
     <string name="ex1_email">Email</string>
     <string name="ex1_password">Password</string>
+    <string name="ex5_task">Nom de la tâche</string>
+    <string name="ex5_cta_validate">Ajouter</string>
 </resources>

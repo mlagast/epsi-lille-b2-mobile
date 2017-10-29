@@ -21,6 +21,7 @@
         <activity android:name=".ex2.TVShowActivity" />
         <activity android:name=".ex3.Ex3ListActivity" />
         <activity android:name=".ex4.ui.ShowListActivity" />
+        <activity android:name=".ex5.Ex5Activity" />
 
     </application>
 
