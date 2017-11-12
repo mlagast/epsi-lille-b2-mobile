@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "epsi.com.testapp"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -44,4 +44,9 @@ dependencies {
     compile "android.arch.lifecycle:runtime:$acVersion"
     compile "android.arch.lifecycle:extensions:$acVersion"
     compile "android.arch.lifecycle:reactivestreams:$acVersion"
+
+    compile 'com.google.firebase:firebase-core:11.6.0'
+    compile 'com.google.firebase:firebase-messaging:11.6.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

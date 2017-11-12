@@ -4,4 +4,10 @@
     <string name="ex1_password">Password</string>
     <string name="ex5_task">Nom de la tâche</string>
     <string name="ex5_cta_validate">Ajouter</string>
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+        news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
 </resources>
